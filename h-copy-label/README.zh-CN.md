@@ -9,8 +9,7 @@ HCopyLabel
 # 依赖
 `"vuetify": "^3.7.7"`
 
-# 用法注意 🚨
-You must do the following steps to get full functionality of this component:
+# 用法 🚨
 你必须执行以下步骤来获得这个组件的完全功能
 1. 宿主项目必须安装和配置vuetify
    - 安装 vuetify

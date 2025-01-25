@@ -9,7 +9,7 @@
 # Dependencies
   `"vuetify": "^3.7.7"`
 
-# Usage Notes 🚨
+# Usage 🚨
 You must do the following steps to get full functionality of this component:
 1. Install and config `vuetify` in the host project
    - install `vuetify`
