@@ -40,7 +40,6 @@ You must do the following steps to get full functionality of this component:
      import './style.css';
      import App from './App.vue';
      import vuetify from './plugins/vuetify';
-     import 'h-copy-label/dist/h-copy-label.css';
      
      createApp(App)
        .use(vuetify)
@@ -52,9 +51,6 @@ You must do the following steps to get full functionality of this component:
      ```shell
      npm install h-copy-label -S
      ```
-     
-   - 在main.ts文件中导入 'copy-label.css'
-     已在上面的main.ts文件中导入了'copy-label.css'
 
    - 在父组件中使用h-copy-label组件
      ```vue

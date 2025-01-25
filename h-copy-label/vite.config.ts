@@ -4,6 +4,7 @@ import AutoImport from "unplugin-auto-import/vite";
 import { fileURLToPath, URL } from "node:url";
 import { resolve } from 'path';
 import dts from 'vite-plugin-dts';
+import cssInjectedByJsPlugin from 'vite-plugin-css-injected-by-js';
 
 // https://vite.dev/config/
 export default defineConfig({
@@ -33,6 +34,8 @@ export default defineConfig({
 
       rollupTypes: true, // ⚠️特别提醒：如果启用了类型合并，请不要使用 beforeWriteFile 来修改文件名，否则会因找不到文件而合并为空结果
     }),
+
+    cssInjectedByJsPlugin(), // ⚠️特别提醒：将CSS注入到JavaScript中。解决 vite build总是构建出独立的.css文件的问题！
   ],
   resolve: {
     alias: {
