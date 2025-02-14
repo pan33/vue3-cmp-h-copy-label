@@ -5,3 +5,6 @@
     |---- README.zh-CN.md  ..................... The README chinese edition of component h-copy-label
 /example ................................... The example code of component h-copy-label usage
 ```
+
+# Usage
+Refer to the detailed usage instructions in `/h-copy-label/README.md`
