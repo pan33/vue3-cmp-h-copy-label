@@ -9,6 +9,15 @@ HCopyLabel
 # 依赖
 `"vuetify": "^3.7.7"`
 
+# 构建
+`npm run build`
+
+# 发布
+```shell
+npm login
+npm publish
+```
+
 # 用法 🚨
 你必须执行以下步骤来获得这个组件的完全功能
 1. 宿主项目必须安装和配置vuetify
@@ -16,15 +25,18 @@ HCopyLabel
      
      ```shell
      npm install vuetify -S
+     npm install @mdi/font -S
      npm install scss -D
      ```
 
    - 配置 Vuetify
      在`src/plugins`目录下创建一个`vuetify.ts`文件
      ```typescript
-     import { createVuetify } from 'vuetify'
-     import * as components from 'vuetify/components'
-     import * as directives from 'vuetify/directives'
+     import "@mdi/font/css/materialdesignicons.css";
+     import 'vuetify/dist/vuetify.min.css';
+     import { createVuetify } from 'vuetify';
+     import * as components from 'vuetify/components';
+     import * as directives from 'vuetify/directives';
      
      export default createVuetify({
        components,
@@ -58,6 +70,8 @@ HCopyLabel
      </script>
      
      <template>
-       <HCopyLabel text="Hill debug - this is my label text"></HCopyLabel>
+       <HCopyLabel text="Hello HCopyLabel A"/><br>
+       <HCopyLabel text="Hello HCopyLabel B"/><br>
+       <HCopyLabel text="Hello HCopyLabel C"/>
      </template>
      ```

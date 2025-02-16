@@ -19,7 +19,7 @@ export default defineConfig({
       // ⚠️ 特别注意：指定 tsconfig 文件. 原因：https://blog.csdn.net/Wrysmile0308/article/details/134318030
       tsconfigPath: 'tsconfig.app.json',
 
-      // ⚠️ 特别注意：在写入文件之前修改文件名。来移除 .vue 后缀
+      // ⚠️ 特别注意：在写入文件之前修改文件名，以移除 .vue 后缀
       // beforeWriteFile: (filePath: string, content: string) => {
       //   // 移除文件名中的 .vue 后缀
       //   if (filePath.endsWith('.vue.d.ts')) {

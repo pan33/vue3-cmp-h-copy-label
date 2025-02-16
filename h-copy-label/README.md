@@ -7,7 +7,16 @@
 - Then, when being clicked, the text is copied to the clipboard and the text shows a heartbeat animation effect.
 
 # Dependencies
-  `"vuetify": "^3.7.7"`
+`"vuetify": "^3.7.7"`
+
+# Build
+`npm run build`
+
+# Publish
+```shell
+npm login
+npm publish
+```
 
 # Usage 🚨
 You must do the following steps to get full functionality of this component:
@@ -16,15 +25,18 @@ You must do the following steps to get full functionality of this component:
 
      ```shell
      npm install vuetify -S
+     npm install @mdi/font -S
      npm install scss -D
      ```
 
    - config `Vuetify`
      create the file `vuetify.ts` under the directory `src/plugins`
      ```typescript
-     import { createVuetify } from 'vuetify'
-     import * as components from 'vuetify/components'
-     import * as directives from 'vuetify/directives'
+     import "@mdi/font/css/materialdesignicons.css";
+     import 'vuetify/dist/vuetify.min.css';
+     import { createVuetify } from 'vuetify';
+     import * as components from 'vuetify/components';
+     import * as directives from 'vuetify/directives';
      
      export default createVuetify({
        components,
@@ -58,7 +70,9 @@ You must do the following steps to get full functionality of this component:
      </script>
      
      <template>
-       <HCopyLabel text="Hill debug - this is my label text"></HCopyLabel>
+       <HCopyLabel text="Hello HCopyLabel A"/><br>
+       <HCopyLabel text="Hello HCopyLabel B"/><br>
+       <HCopyLabel text="Hello HCopyLabel C"/>
      </template>
      ```
 

@@ -1,9 +1,11 @@
 <script setup lang="ts">
-import CopyLabel from "@/components/HCopyLabel.vue";
+import HCopyLabel from "@/components/HCopyLabel.vue";
 </script>
 
 <template>
-  <CopyLabel text="Hill debug"/>
+  <HCopyLabel text="Hello HCopyLabel 1"/><br>
+  <HCopyLabel text="Hello HCopyLabel 2"/><br>
+  <HCopyLabel text="Hello HCopyLabel 3"/>
 </template>
 
 <style scoped>

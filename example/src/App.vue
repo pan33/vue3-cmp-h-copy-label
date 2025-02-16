@@ -3,7 +3,9 @@ import HCopyLabel from 'h-copy-label';
 </script>
 
 <template>
-  <HCopyLabel text="Hill debug - this is my label text"></HCopyLabel>
+  <HCopyLabel text="Hello HCopyLabel A"/><br>
+  <HCopyLabel text="Hello HCopyLabel B"/><br>
+  <HCopyLabel text="Hello HCopyLabel C"/>
 </template>
 
 <style scoped>
